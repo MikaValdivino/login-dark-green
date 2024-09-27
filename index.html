@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Página de login para acessar o sistema."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>Bem-vindo! <br />Faça login para continuar</h1>
+        <img
+          src="wallet.svg"
+          class="left-login-img"
+          alt="Imagem animada de uma carteira"
+        />
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <h1>Entrar</h1>
+          <div class="textfield">
+            <label for="usuario">Usuário</label>
+            <input
+              type="text"
+              name="usuario"
+              placeholder="Digite seu usuário"
+              aria-label="Usuário"
+            />
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              placeholder="Digite sua senha"
+              required
+              aria-label="Senha"
+              id="senha-input"
+            />
+          </div>
+
+          <button class="btn-login">Login</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

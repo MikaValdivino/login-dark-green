@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #181523 0%, #201b2c 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login h1 {
+  font-size: 2.8vw;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.left-login-img {
+  width: 30vw;
+}
+
+.right-login {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  background: #2f2841;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-login.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-login h1 {
+  color: #4fe27b;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.textfield {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.textfield label {
+  color: #c9c9c9;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.textfield input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #514869;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.textfield input:focus {
+  background: #605982;
+  box-shadow: 0px 10px 50px rgba(38, 147, 93, 0.5);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #4fe27b;
+  color: #2b134b;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-login:hover {
+  background: #3cb367;
+}
+
+.btn-login:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 950px) {
+  .card-login {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .left-login {
+    display: none;
+  }
+
+  .right-login {
+    width: 90%;
+  }
+
+  .card-login {
+    width: 100%;
+    padding: 20px;
+  }
+}
