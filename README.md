@@ -2,6 +2,10 @@
 
 Esta página de login foi criada utilizando HTML e CSS, com um layout responsivo e elementos visuais atraentes. O design inclui animações sutis e uma interface amigável, com foco na usabilidade.
 
+![Pagina de Login Print](login-page.png)
+
+[Deploy da pagina de login](https://mikavaldivino.github.io/login-dark-green/)
+
 ## Estrutura do HTML
 
 O arquivo HTML contém a seguinte estrutura básica:
@@ -48,4 +52,4 @@ O design é responsivo, adaptando-se a diferentes tamanhos de tela:
 - Para telas menores que 950px, o cartão de login se expande.
 - Para telas menores que 600px, a seção esquerda (com a imagem) é oculta e o layout se reorganiza para uma única coluna.
 
-## Considerações Finais
+
